@@ -100,7 +100,7 @@
     "benchmark": ["1.6", "1.6.5", "2.0"]
   },
   {
-    "game_name": "mm_mapworld_main",
+    "game_name": "mm_mapworld",
     "game_path": "../clemgames/mm_mapworld/mm_mapworld_main",
     "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
     "main_game": "mm_mapworld_main",
@@ -130,33 +130,75 @@
     "benchmark": ["1.6", "1.6.5", "2.0"]
   },
   {
-    "game_name": "textmapworld_main",
-    "game_path": "../clemgames/textmapworld/textmapworld_main",
-    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
-    "main_game": "textmapworld_main",
+    "game_name": "wordle",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game.",
+    "main_game": "wordle",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "wordle_withclue",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game with clue giver.",
+    "main_game": "wordle",
+    "instances": "instances_withclue",
     "players": "two",
     "image": "none",
     "languages": ["en"],
-    "benchmark": ["1.6", "1.6.5", "2.0"]
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "wordle_withcritic",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game with critic.",
+    "main_game": "wordle",
+    "instances": "instances_withcritic",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "matchit_ascii",
+    "game_path": "../clemgames/matchit_ascii",
+    "description": "Matching grids of ASCII characters between two players.",
+    "main_game": "matchit_ascii",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld",
+    "game_path": "../clemgames/textmapworld/textmapworld_main",
+    "description": "Exhaustively exploring a map.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
   },
   {
     "game_name": "textmapworld_graphreasoning",
     "game_path": "../clemgames/textmapworld/textmapworld_graphreasoning",
-    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
-    "main_game": "textmapworld_main",
-    "players": "two",
+    "description": "Exhaustively exploring a map with graph reasoning.",
+    "main_game": "textmapworld",
+    "players": "one",
     "image": "none",
     "languages": ["en"],
-    "benchmark": ["1.6", "1.6.5", "2.0"]
+    "benchmark": ["2.0"]
   },
   {
     "game_name": "textmapworld_specificroom",
     "game_path": "../clemgames/textmapworld/textmapworld_specificroom",
-    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
-    "main_game": "textmapworld_main",
-    "players": "two",
+    "description": "Exploring a map to find a specific room.",
+    "main_game": "textmapworld",
+    "players": "one",
     "image": "none",
     "languages": ["en"],
-    "benchmark": ["1.6", "1.6.5", "2.0"]
+    "benchmark": ["2.0"]
   }
 ]
